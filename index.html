@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de Elementos Químicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Classificação de Elementos Químicos</h1>
+
+        <!-- Formulário para adicionar elementos -->
+        <div class="form-section">
+            <label for="novoElemento">Novo Elemento:</label>
+            <input id="novoElemento" type="text" placeholder="Digite o novo elemento">
+            <div class="button-wrapper">
+                <button onclick="adicionarElemento()">Adicionar</button>
+            </div>
+        </div>
+
+        <!-- Tabela de elementos -->
+        <h2>Lista de Elementos:</h2>
+        <table id="elementosTabela">
+            <thead>
+                <tr>
+                    <th>Elemento</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <!-- Mensagem de feedback -->
+        <p id="mensagem"></p>
+
+        <!-- Botão para exibir categorias -->
+        <button onclick="mostrarCategorias()">Ver Categorias e Elementos</button>
+
+        <!-- Categorias e elementos -->
+        <div id="categoriasContainer" style="display: none;">
+            <h2>Categorias e Elementos:</h2>
+            <ul id="categoriasLista"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
